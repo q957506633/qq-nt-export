@@ -1,0 +1,29 @@
+{
+  "skill_name": "qq-nt-export",
+  "version": "1.3.0",
+  "description": "NTQQ(新版QQ) 聊天记录导出：内存取钥 -> SQLCipher 解密 -> 消息解析导出 JSON/TXT",
+  "db_path": "D:\\Documents\\Tencent Files\\<YOUR_QQ_NUMBER>\\nt_qq\\nt_db\\nt_msg.db",
+  "db_path_candidates": [
+    "D:\\Documents\\Tencent Files\\<YOUR_QQ_NUMBER>\\nt_qq\\nt_db\\nt_msg.db",
+    "%USERPROFILE%\\Documents\\Tencent Files\\<YOUR_QQ_NUMBER>\\nt_qq\\nt_db\\nt_msg.db",
+    "C:\\Users\\<YOUR_USERNAME>\\Documents\\Tencent Files\\<YOUR_QQ_NUMBER>\\nt_qq\\nt_db\\nt_msg.db"
+  ],
+  "self_uid": "",
+  "self_qq": "",
+  "header_size": 1024,
+  "page_size": 4096,
+  "kdf_iter": 4000,
+  "hmac_algorithm": "HMAC_SHA1",
+  "kdf_algorithm": "PBKDF2_HMAC_SHA512",
+  "data_key": "",
+  "salt": "",
+  "key_variant": "D_raw_hex_key_plus_salt_hmac_sha1",
+  "work_dir": "D:\\qq-nt-export\\work",
+  "output_dir": "D:\\qq-nt-export\\output",
+  "python": "",
+  "python_fallback": "python",
+  "pkg_path": "",
+  "deps": ["sqlcipher3", "pycryptodome", "zstandard"],
+  "default_limit": 0,
+  "notes": "data_key/salt 为敏感信息，由 ntqq_key_scan.py 扫描后自动回写；换机器/换账号后必须重新提取。勿提交仓库或外传。"
+}

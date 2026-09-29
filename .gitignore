@@ -1,0 +1,18 @@
+# 敏感与本机数据 —— 永远不要提交
+config.json
+work/
+output/
+reports/
+*.db
+*.db-wal
+*.db-shm
+*.db.clear
+*_plain.db
+ntqq_db_key.json
+ntqq_key_scan.json
+aux_decrypt_report.json
+decrypt_report.json
+verify_report.json
+sessions_index.json
+__pycache__/
+*.pyc
